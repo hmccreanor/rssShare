@@ -6,11 +6,6 @@ from time import mktime
 
 app = Flask(__name__)
 
-sample_posts = [["Trump impeached after scandal", "cnn.com"],
-                ["Ryan Reynolds to star in new Deadpool film", "tmz.com"],
-                ["Chelsea thump Arsenal 8-0", "bbc.com/sports"],
-                ["Vim is good", "hackernoon.com"]]
-
 posts = {}
 
 # Wrapper function for readability
@@ -20,7 +15,6 @@ def new_uuid():
 def contains_key(key, dict):
     return dict.get(key) != None
 
-# FIX THIS -- SORTING IS BROKEN
 def sort_feeds(array):
     less = []
     equal = []
